@@ -1,0 +1,34 @@
+
+//Base Page Styling
+@forward 'forms';
+@forward 'multiplayerLobby';
+@forward 'multiplayerGame';
+
+@use 'variables' as vars;
+@use 'mixins' as mixins;
+//Universal Styling
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+#root{
+    overflow-x: hidden;
+    font-family: vars.$sansFont;
+    background-color: vars.$backgroundColor;
+    min-height: 100vh;
+}
+#mainHolder{
+    background-color: vars.$backgroundColor;
+    min-height: 100vh;
+}
+.tab{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+
+
+
+

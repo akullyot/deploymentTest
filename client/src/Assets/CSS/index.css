@@ -1,0 +1,521 @@
+.form {
+  width: max-content;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+  border-radius: 20px;
+  border: 3px solid grey;
+}
+.form h1 {
+  padding: 20px 100px;
+  text-transform: uppercase;
+}
+
+#multiplayerRoomHeader {
+  margin-top: 5px;
+  width: max-content;
+  padding: 10px 30px;
+  margin-bottom: 0px;
+  border: 5px solid rgb(0, 0, 0);
+}
+#multiplayerRoomHeader #roomTitle {
+  color: lightgreen;
+  margin-bottom: 10px;
+}
+#multiplayerRoomHeader h4 {
+  margin-bottom: 10px;
+}
+#multiplayerRoomHeader #linkHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#multiplayerRoomHeader #linkHolder #roomLink {
+  padding: 10px;
+  border: 2px solid lightgreen;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+#multiplayerRoomHeader #linkHolder #roomLink span {
+  color: lightgreen;
+  font-size: larger;
+}
+#multiplayerRoomHeader #linkHolder #roomLink #privateInfo {
+  font-size: smaller;
+}
+
+#gameSpace {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+#gameSpace .boggleBoard {
+  height: 60vh;
+  width: 50vw;
+  border-radius: 20px;
+  border: 5px solid rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#gameSpace .boggleBoard h2 {
+  padding: 20px;
+  color: rgba(0, 0, 0, 0.63);
+}
+#gameSpace #participantsHolder, #gameSpace #chatHolder {
+  width: 22vw;
+  padding: 0px;
+  margin: 0px 50px;
+  align-items: center;
+  border-radius: 20px;
+}
+#gameSpace .header {
+  color: #90ee90;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: rgb(37, 37, 37);
+  margin: 0px;
+  width: 100%;
+  padding-top: 10px;
+  font-weight: bolder;
+  border: 5px solid rgb(0, 0, 0);
+}
+#gameSpace .body {
+  height: 55vh;
+  text-align: center;
+  margin-top: 30px;
+  overflow-y: auto;
+}
+#gameSpace .body .participantYou, #gameSpace .body .participantElse {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+#gameSpace .body .participantYou button, #gameSpace .body .participantElse button {
+  width: 150px;
+  margin: 10px;
+}
+#gameSpace .body .sentMessage {
+  float: right;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  background-color: rgb(37, 37, 37);
+  color: lightgreen;
+  font-weight: bold;
+  width: 65%;
+}
+#gameSpace .body .sentMessage .messageHeader {
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+}
+#gameSpace .body .recievedMessage {
+  float: left;
+  border: 2px solid balck;
+  border-radius: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  background-color: lightgreen;
+  color: black;
+  width: 65%;
+}
+
+.chatFooter {
+  height: 60px;
+  border-top: 2px solid white;
+}
+.chatFooter input {
+  width: calc(100% - 40px);
+  margin-right: 0px;
+  height: 60px;
+  border-bottom-left-radius: 20px;
+  padding-left: 8px;
+  margin-left: 0px;
+  border: none;
+  margin-top: 0px;
+  color: white;
+  background-color: rgb(37, 37, 37);
+}
+.chatFooter button {
+  width: 40px;
+  margin-top: -5px;
+  margin-left: 0px;
+  padding-top: 1px;
+  height: 60px;
+  border-bottom-right-radius: 20px;
+  border: none;
+  background-color: lightgreen;
+}
+
+#buttonsHolder {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#buttonsHolder button {
+  width: 360px;
+  margin: 0px 30px;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+#buttonsHolder button:hover {
+  text-decoration: underline;
+}
+
+#startButton {
+  background-color: lightgreen;
+  color: rgb(37, 37, 37);
+  border: 4px solid rgb(37, 37, 37);
+}
+
+#abandonButton {
+  background-color: rgb(37, 37, 37);
+  color: lightgreen;
+  border: 4px solid lightgreen;
+}
+
+#startAnimation {
+  width: 95%;
+  border: 5px solid rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin: auto;
+  margin-top: 20px;
+}
+#startAnimation h2 {
+  padding: 20px;
+  color: rgba(0, 0, 0, 0.63);
+}
+
+#boggleGameArea {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+#boggleGameArea #gameFoundWords {
+  width: 20vw;
+  height: 90vh;
+  border-radius: 20px;
+  position: relative;
+}
+#boggleGameArea #gameFoundWords .header {
+  color: #90ee90;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: rgb(37, 37, 37);
+  margin: 0px;
+  width: 100%;
+  padding-top: 10px;
+  font-weight: bolder;
+  border: 5px solid rgb(0, 0, 0);
+}
+#boggleGameArea #gameFoundWords ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+#boggleGameArea #gameFoundWords ul li {
+  font-weight: bold;
+  color: #90ee90;
+  font-size: 30px;
+  text-align: center;
+}
+#boggleGameArea #gameFoundWords #wordCounter {
+  position: absolute;
+  bottom: 0px;
+  color: #90ee90;
+  margin-left: 10px;
+}
+#boggleGameArea #gamePlayerArea {
+  width: 75vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#boggleGameArea #gamePlayerArea #timer {
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: #90ee90;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgb(37, 37, 37);
+  padding: 20px 50px;
+  font-weight: bolder;
+  border: 5px solid rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+#boggleGameArea #gamePlayerArea #timer h4 {
+  margin-right: 60px;
+}
+#boggleGameArea #gamePlayerArea #boggleBoard {
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: bolder;
+  border: 10px solid rgb(0, 0, 0);
+  margin: 20px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.322);
+}
+#boggleGameArea #gamePlayerArea #boggleBoard .boggleBoardRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#boggleGameArea #gamePlayerArea #boggleBoard .boggleBoardRow .boggleDice {
+  border: 1px solid #333;
+  background: #ddd radial-gradient(circle, #fff, #fff 70%, transparent 70%);
+  border-radius: 12px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+  font-size: 55px;
+  margin: 5px;
+}
+#boggleGameArea #gamePlayerArea #inputBox {
+  color: #90ee90;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgb(37, 37, 37);
+  padding: 20px 50px;
+  font-weight: bolder;
+  border: 5px solid rgb(0, 0, 0);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+#boggleGameArea #gamePlayerArea #inputBox form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+#boggleGameArea #gamePlayerArea #inputBox form label {
+  width: 300px;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 10px;
+}
+#boggleGameArea #gamePlayerArea #inputBox form input {
+  padding: 20px;
+  font-size: 20px;
+}
+#boggleGameArea #gamePlayerArea #inputBox form button {
+  background-color: lightgreen;
+  margin-left: 20px;
+  color: black;
+  border: 2px solid black;
+  text-transform: uppercase;
+}
+#boggleGameArea #gamePlayerArea #inputBox #inputError {
+  font-size: 20px;
+  color: red;
+  text-transform: uppercase;
+  margin-top: 5px;
+  width: 100%;
+  min-height: 60px;
+}
+
+#resultsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#resultsContainer #resultsTitle {
+  margin-top: 5px;
+  width: max-content;
+  padding: 10px 30px;
+  margin-bottom: 0px;
+  border: 5px solid rgb(0, 0, 0);
+  color: lightgreen;
+}
+#resultsContainer #chatAndAllResultsHolder {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+#resultsContainer #chatAndAllResultsHolder #allResultsHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 70vw;
+}
+#resultsContainer #chatAndAllResultsHolder #allResultsHolder #playerHolder {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 10px;
+  justify-content: start;
+  margin-bottom: 40px;
+}
+#resultsContainer #chatAndAllResultsHolder #allResultsHolder #playerHolder .playerResults {
+  border-radius: 20px;
+  color: lightgreen;
+  width: 15vw;
+  margin-left: 30px;
+}
+#resultsContainer #chatAndAllResultsHolder #allResultsHolder #playerHolder .playerResults .header {
+  color: #90ee90;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgb(37, 37, 37);
+  margin: 0px;
+  width: 100%;
+  padding-top: 10px;
+  font-weight: bolder;
+  border: 5px solid rgb(0, 0, 0);
+}
+#resultsContainer #chatAndAllResultsHolder #allResultsHolder #playerHolder .playerResults .playerWordsFound ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 10px 50px;
+  margin-bottom: 0px;
+  min-height: 800px;
+}
+#resultsContainer #chatAndAllResultsHolder #allResultsHolder #playerHolder .playerResults .playerWordsFound ul li {
+  color: #90ee90;
+  font-size: 20px;
+  margin-top: 5px;
+}
+#resultsContainer #chatAndAllResultsHolder #allResultsHolder #solvedBoard {
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 20px;
+  color: lightgreen;
+  width: 70vw;
+}
+#resultsContainer #chatAndAllResultsHolder #allResultsHolder #solvedBoard .header {
+  color: #90ee90;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgb(37, 37, 37);
+  margin: 0px;
+  width: 100%;
+  padding-top: 10px;
+  font-weight: bolder;
+  border: 5px solid rgb(0, 0, 0);
+}
+#resultsContainer #chatAndAllResultsHolder #allResultsHolder #solvedBoard ul {
+  border-radius: 20px;
+  margin-top: 10px;
+  list-style: none;
+  width: 100%;
+}
+#resultsContainer #chatAndAllResultsHolder #allResultsHolder #solvedBoard ul li {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  width: 160px;
+}
+#resultsContainer #chatAndAllResultsHolder #chatHolder {
+  width: 22vw;
+  padding: 0px;
+  margin: 0px 50px;
+  align-items: center;
+  border-radius: 20px;
+}
+#resultsContainer #chatAndAllResultsHolder #chatHolder .header {
+  color: #90ee90;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: rgb(37, 37, 37);
+  margin: 0px;
+  width: 100%;
+  padding-top: 10px;
+  font-weight: bolder;
+  border: 5px solid rgb(0, 0, 0);
+}
+#resultsContainer #chatAndAllResultsHolder #chatHolder .body {
+  height: 55vh;
+  text-align: center;
+  margin-top: 30px;
+  overflow-y: auto;
+}
+#resultsContainer #chatAndAllResultsHolder #chatHolder .body .sentMessage {
+  float: right;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  background-color: rgb(37, 37, 37);
+  color: lightgreen;
+  font-weight: bold;
+  width: 65%;
+}
+#resultsContainer #chatAndAllResultsHolder #chatHolder .body .sentMessage .messageHeader {
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+}
+#resultsContainer #chatAndAllResultsHolder #chatHolder .body .recievedMessage {
+  float: left;
+  border: 2px solid balck;
+  border-radius: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  background-color: lightgreen;
+  color: black;
+  width: 65%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#root {
+  overflow-x: hidden;
+  font-family: Poppins, sans-serif;
+  background-color: rgb(68, 69, 75);
+  min-height: 100vh;
+}
+
+#mainHolder {
+  background-color: rgb(68, 69, 75);
+  min-height: 100vh;
+}
+
+.tab {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/*# sourceMappingURL=index.css.map */
